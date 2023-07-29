@@ -17,3 +17,27 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
 }
+
+model IndeedJobs {
+  // Metadata
+  job_key              String @id
+  query_keyword        String
+  query_location       String
+  serp                 Int
+  serp_position        Int
+  // Job details
+  company              String
+  company_rating       Float
+  company_review_count Int
+  job_title            String
+  description          String
+  apply_link           String
+  posted_at            Int
+  job_location_city    String
+  job_location_postal  String
+  job_location_state   String
+  max_salary           Float
+  min_salary           Float
+  salary_type          String
+  source               String
+}
