@@ -1,6 +1,6 @@
-import { prisma } from ".";
+import type { User } from "@prisma/client"
 
-import type { User } from "@prisma/client";
+import { prisma } from "."
 
 const DEFAULT_USERS = [
   // Add your own user to pre-populate the database with
@@ -8,9 +8,9 @@ const DEFAULT_USERS = [
     name: "Tim Apple",
     email: "tim@apple.com",
   },
-] as Array<Partial<User>>;
+] as Array<Partial<User>>
 
-(async () => {
+;(async () => {
   try {
     await Promise.all(
       DEFAULT_USERS.map((user) =>
@@ -26,11 +26,11 @@ const DEFAULT_USERS = [
           },
         })
       )
-    );
+    )
   } catch (error) {
-    console.error(error);
-    process.exit(1);
+    console.error(error)
+    process.exit(1)
   } finally {
-    await prisma.$disconnect();
+    await prisma.$disconnect()
   }
-})();
+})()

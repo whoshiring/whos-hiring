@@ -1,4 +1,5 @@
 import { prisma } from "@whoshiring/database"
+import type { IndeedJobs } from "@whoshiring/database"
 
 export default async function IndexPage() {
   const users = await prisma.user.findMany()

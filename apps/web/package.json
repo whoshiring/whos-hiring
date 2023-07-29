@@ -17,10 +17,10 @@
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
-    "@whoshiring/config": "workspace:*",
-    "@whoshiring/database": "workspace:*",
+    "@whoshiring/config": "*",
+    "@whoshiring/database": "*",
     "eslint": "^8.46.0",
-    "@whoshiring/tsconfig": "workspace:*",
+    "@whoshiring/tsconfig": "*",
     "typescript": "^5.1.6"
   }
 }

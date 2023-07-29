@@ -1,6 +1,6 @@
 {
   "name": "@whoshiring/database",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -19,17 +19,17 @@
     "format": "prisma format",
     "generate": "prisma generate",
     "lint": "eslint \"src/**/*.ts\"",
-    "prebuild": "npm run generate",
-    "predev": "npm run generate",
+    "prebuild": "yarn generate",
+    "predev": "yarn generate",
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "^5.0.0",
-    "@types/node": "^17.0.12"
+    "@prisma/client": "^5.0.0"
   },
   "devDependencies": {
-    "@whoshiring/config": "workspace:*",
-    "@whoshiring/tsconfig": "workspace:*",
+    "@types/node": "^17.0.12",
+    "@whoshiring/config": "*",
+    "@whoshiring/tsconfig": "*",
     "eslint": "^8.46.0",
     "prisma": "^5.0.0",
     "rimraf": "^5.0.1",

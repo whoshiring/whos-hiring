@@ -1,5 +1,9 @@
 {
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "prisma": {
     "schema": "packages/database/prisma/schema.prisma",
     "seed": "tsx packages/database/src/seed.ts"
@@ -12,19 +16,18 @@
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "generate": "turbo run generate",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
   },
   "devDependencies": {
-    "prettier": "^3.0.0",
-    "tsx": "^3.12.7",
-    "turbo": "latest",
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "husky": "^8.0.3"
+    "tsx": "^3.12.7",
+    "turbo": "latest"
   },
-  "packageManager": "pnpm@8.1.0",
-  "dependencies": {
-  }
+  "packageManager": "yarn@1.22.19"
 }

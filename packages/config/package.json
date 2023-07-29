@@ -1,7 +1,7 @@
 {
   "name": "@whoshiring/config",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "eslint-preset.js",
   "license": "MIT",
   "files": [
     "eslint-preset.js"
